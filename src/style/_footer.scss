@@ -1,0 +1,120 @@
+.footer{
+  background: #181818;
+  &__wrapper{
+    max-width: 1456px;
+    margin: 0 auto;
+    padding: 80px 0 20px 0;
+
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__tel{
+    font-family: AvrileSerif;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 45px;
+  }
+  &__contact{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+  &__link{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__sign{
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__items{
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.32px;
+    &-services{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-bottom: 20px;
+    }
+  }
+  &__service{
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__social{
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__block{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.social{
+  &__title{
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__item{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 156.25% */
+    letter-spacing: 0.32px;
+  }
+}
+.block{
+  &__img{
+    width: 151px;
+    height: 35px;
+  }
+  &__link{
+    padding-left: 295px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+    text-decoration-line: underline;
+  }
+  &__pandaWorks{
+    color: rgba(255, 255, 255, 0.55);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+}

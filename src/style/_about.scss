@@ -1,0 +1,82 @@
+.about{
+  &__wrapper{
+    max-width: 1456px;
+    margin: 0 auto;
+    padding: 60px 0;
+    padding-bottom: 59px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #DDD;
+  }
+  &__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__logo{
+    width: 45px;
+    height: 50px;
+  }
+  &__block{
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    align-items:center;
+    justify-content: flex-start;
+  }
+  &__img{
+    width: 12px;
+    height: 12px;
+  }
+  &__name{
+    color: rgba(255, 255, 255, 0.55);
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &__rigth{
+    max-width: 750px;
+    padding-left: 30px;
+  }
+  &__title{
+    color: #FFF;
+    font-family: AvrileSerif;
+    font-size: 52px;
+    font-style: italic;
+    font-weight: 500;
+    max-width: 680px;
+    line-height: 50px;
+    span{
+      color: #D8B27A;
+    }
+  }
+  &__text{
+    margin-top: 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &__btn{
+    margin-top: 60px;
+    border-radius: 50px;
+    border: 1px solid #D8B27A;
+    width: 231px;
+    height: 55px;
+    background: #1C1C1C;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    span{
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 25px;
+      letter-spacing: 0.32px;
+      color: #FFF;
+    }
+  }
+}

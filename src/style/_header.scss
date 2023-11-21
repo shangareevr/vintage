@@ -1,0 +1,59 @@
+.header{
+  margin: 0 auto;
+  &__wrapper{
+    margin: 0 auto;
+    padding: 25px 232px;
+    display: flex;
+    justify-content:flex-start;
+    max-width: 1920px;
+  }
+  &__call{
+    display: flex;
+    flex-direction: row;
+    margin-left: 198px;
+    gap: 41px;
+  }
+  &__logo{
+    width: 108px;
+    height: 25px;
+    margin-left: 246px;
+  }
+  &__request{
+    display: flex;
+    gap: 11px;
+    margin-top: 6px;
+    align-items: baseline;
+  }
+}
+.nav{
+  &__list{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  &__items{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__link{
+    line-height: 25px;
+  }
+}
+.call{
+  &__number{
+    display: flex;
+    line-height: 25px;
+    gap: 4px;
+  }
+  &__text{
+    color: rgba(255, 255, 255, 0.50);
+    line-height: 25px;
+  }
+}
+.request{
+  &__img{
+    width: 11px;
+    height: 10px;
+  }
+}
