@@ -2,21 +2,32 @@
   margin: 0 auto;
   &__wrapper{
     margin: 0 auto;
-    padding: 25px 232px;
+    max-width: 1455px;
+    padding: 25px 0;
     display: flex;
-    justify-content:flex-start;
-    max-width: 1920px;
+    justify-content:space-between;
+    position: relative;
+    @media(max-width:1600px){
+      padding: 25px;
+    }
   }
   &__call{
     display: flex;
     flex-direction: row;
     margin-left: 198px;
-    gap: 41px;
+    gap: 40px;
+    width:max-content;
+    @media(max-width:1600px){
+      margin-left: 0;
+    }
   }
   &__logo{
     width: 108px;
     height: 25px;
     margin-left: 246px;
+    @media(max-width:1600px){
+      margin-left: 0;
+    }
   }
   &__request{
     display: flex;
@@ -30,8 +41,32 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
+    width:max-content;
+    @media(max-width:1200px){
+      gap: 20px;
+    }
+  }
+  &__submenu{
+    display: none;
+    position: absolute;
+    width: 273px;
+    padding: 25px 30px;
+    background: #333;
+    top: 75px;
+    left: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
   }
   &__items{
+    color: #fff;
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -39,12 +74,19 @@
   &__link{
     line-height: 25px;
   }
+  &__img{
+    transition: all 0.3s ease;
+  }
 }
 .call{
   &__number{
     display: flex;
     line-height: 25px;
     gap: 4px;
+    width:max-content;
+  }
+  &__tel{
+    width:max-content;
   }
   &__text{
     color: rgba(255, 255, 255, 0.50);
@@ -56,4 +98,19 @@
     width: 11px;
     height: 10px;
   }
+}
+.submenu{
+  &__link{
+    transition: all 0.3s ease;
+    &:hover{
+      color: #D8B27A;
+    }
+  }
+}
+.rotate{
+  transform: rotate(180deg);
+}
+.open-submenu{
+  visibility: visible;
+  opacity: 1;
 }

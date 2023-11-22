@@ -1,12 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const webpack = require('webpack');
 const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
-
+const $ = require("jquery");
 module.exports = {
   mode,
   target,
@@ -30,6 +30,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
+    new webpack.ProvidePlugin({
+			identifier: path.resolve(path.join(__dirname, 'src/module1')),
+			$: 'jquery',
+ 		  jQuery: 'jquery',
+		}),
   ],
   module: {
     rules: [
@@ -106,6 +111,30 @@ module.exports = {
           options: {
             presets: ['@babel/preset-env'],
           },
+        },
+      },
+      {
+        test: require.resolve("jquery"),
+        loader: "expose-loader",
+        options: {
+          exposes: ["$", "jQuery"],
+        },
+      },
+      {
+        test: require.resolve("underscore"),
+        loader: "expose-loader",
+        options: {
+          exposes: [
+            "_.map|map",
+            {
+              globalName: "_.reduce",
+              moduleLocalName: "reduce",
+            },
+            {
+              globalName: ["_", "filter"],
+              moduleLocalName: "filter",
+            },
+          ],
         },
       },
     ],

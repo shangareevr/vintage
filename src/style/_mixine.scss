@@ -1,0 +1,75 @@
+@mixin titleH1 {
+  font: {
+    family: AvrileSerif;
+    size: 72px;
+    weight: bold;
+    style: italic;
+    weight: 500;  
+  }
+  line-height: 70px;
+  text-align: center;
+  color: #FFF;
+  span{
+    color: #D8B27A;
+  }
+}
+@mixin titleH1Midle {
+  font-size: 54px;
+  line-height: 55px;
+}
+@mixin titleH1Mob {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+@mixin title {
+  font: {
+    family: AvrileSerif;
+    size: 52px;
+    weight: bold;
+    style: italic;
+    weight: 500;  
+  }
+  line-height: 50px;
+  color: #FFF;
+  span{
+    color: #D8B27A;
+  }
+}
+@mixin titleMidle {
+  font: {
+    size: 42px; 
+  }
+  line-height: 42px;
+}
+
+@mixin titleMob {
+  font: {
+    size: 32px; 
+  }
+  line-height: 35px;
+}
+
+@mixin btn {
+  font: {
+    family: Inter;
+    size: 16px;
+    weight: 600;
+    style: normal;
+    weight: 600;  
+  }
+  line-height: 25px;
+  letter-spacing: 0.32px;
+  color: #FFF;
+  border: 1px solid #D8B27A;
+  border-radius: 50px;
+  background: #1C1C1C;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+@mixin btnMobile {
+  font-size: 14px;
+  gap: 8px;
+}

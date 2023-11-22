@@ -47,8 +47,23 @@ body {
 }
 .wrapper{
   margin: 0 auto;
-  max-width: 1920px;
+}
+.section{
+  text-align: center;
+  overflow: hidden;
 }
 .section__img{
+  margin: 0 auto;
   margin-top: 141px;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('../img/Rectangle 135.png');
+  background-position: center;
+  height: 720px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media(max-width:1200px){
+    margin-top:80px;
+    height: 400px;
+  }
 }

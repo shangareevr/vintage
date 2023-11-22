@@ -1,0 +1,10 @@
+$fontSizeH1: 72px;
+$fontSizeH2: 52px;
+@media (max-width:1300px){
+  $fontSizeH1: 54px;
+  $fontSizeH2: 42px;
+}
+@media (max-width:600px){
+  $fontSizeH1: 36px;
+  $fontSizeH2: 32px;
+}

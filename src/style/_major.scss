@@ -5,37 +5,46 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    @media(max-width:1200px){
+      padding: 50px 0;
+    }
   }
   &__title{
-    width: 953px;
-    color: #FFF;
-    text-align: center;
-    font-family: AvrileSerif;
-    font-size: 72px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 70px;
-    span{
-      color: #D8B27A;
+    max-width: 953px;
+    @include titleH1;
+    @media(max-width:1200px){
+      @include titleH1Midle;
+    }
+    @media(max-width:700px){
+      @include titleH1Mob;
     }
   }
   &__link{
     margin-top: 50px;
-    display: flex;
     width: 257px;
     height: 56px;
-    border-radius: 50px;
-    border: 1px solid #D8B27A;
-    align-items: center;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0.32px;
-    justify-content: center;
-    gap: 8px;
+    @include btn;
+    @media(max-width:1200px){
+      @include btnMobile;
+      margin-top:35px;
+      width: 222px;
+      height: 50px;
+    }
   }
   &__img{
+    margin: 0 auto;
     margin-top: 114px;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('../img/Rectangle 128.png');
+    background-position: center;
+    height: 720px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media(max-width:1200px){
+      margin-top:50px;
+      height: 400px;
+    }
   }
 }

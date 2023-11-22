@@ -1,2 +1,10 @@
 import './index.html';
 import './index.scss';
+import {openSubmenu} from './js/openSubmenu.js';
+openSubmenu();
+import {openPortfolio} from './js/openPortfolio.js';
+openPortfolio();
+import $ from "jquery";
+window.jQuery = $;
+require("@fancyapps/fancybox");
+import './js/mask-number.js';

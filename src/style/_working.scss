@@ -3,19 +3,34 @@
     max-width: 1456px;
     margin: 0 auto;
     margin-top: 59px;
+    @media(max-width:1450px){
+      padding: 0 15px;
+      margin-top: 50px;
+    }
   }
   &__title{
-    font-family: AvrileSerif;
-    font-size: 52px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 50px;
+    @include title;
+    @media(max-width:1200px){
+      @include titleMidle;
+    }
+    @media(max-width:700px){
+      @include titleMob;
+    }
   }
   &__plan{
     margin-top: 60px;
     display: flex;
     gap: 19px;
     flex-wrap: wrap;
+    @media(max-width:1450px){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @media(max-width:700px){
+      margin-top: 30px;
+      gap: 35px;
+    }
   }
   &__item{
     display: flex;
@@ -23,6 +38,11 @@
     gap: 30px;
     width: 716px;
     padding-bottom:20px;
+    @media(max-width:1200px){
+      max-width: 100%;
+      gap: 15px;
+      padding: 0;
+    }
   }
   &__number{
     color: #D8B27A;
@@ -54,6 +74,9 @@
     font-style: normal;
     font-weight: 600;
     line-height: 25px;
+    @media(max-width:1200px){
+      font-size: 16px;
+    }
   }
   &__text{
     margin-top: 10px;
@@ -62,6 +85,9 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px
+    line-height: 20px;
+    @media(max-width:1200px){
+      font-size: 14px;
+    }
   }
 }

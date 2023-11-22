@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #DDD;
+    position: relative;
+    @media(max-width:1500px){
+      padding: 30px 15px;
+    }
   }
   &__left{
     display: flex;
@@ -16,6 +20,11 @@
   &__logo{
     width: 45px;
     height: 50px;
+    @media(max-width:900px){
+      position: absolute;
+      bottom: 20px;
+      right: 15px;
+    }
   }
   &__block{
     display: flex;
@@ -23,6 +32,9 @@
     margin-top: 10px;
     align-items:center;
     justify-content: flex-start;
+    @media(max-width:900px){
+      display: none;
+    }
   }
   &__img{
     width: 12px;
@@ -39,17 +51,18 @@
   &__rigth{
     max-width: 750px;
     padding-left: 30px;
+    @media(max-width:700px){
+      padding: 0;
+    }
   }
   &__title{
-    color: #FFF;
-    font-family: AvrileSerif;
-    font-size: 52px;
-    font-style: italic;
-    font-weight: 500;
-    max-width: 680px;
-    line-height: 50px;
-    span{
-      color: #D8B27A;
+    @include title;
+    @media(max-width:1200px){
+      @include titleMidle;
+    }
+    @media(max-width:700px){
+      @include titleMob;
+      max-width: 350px;
     }
   }
   &__text{
@@ -58,25 +71,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    @media(max-width:700px){
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   &__btn{
     margin-top: 60px;
-    border-radius: 50px;
-    border: 1px solid #D8B27A;
+    @include btn;
     width: 231px;
     height: 55px;
-    background: #1C1C1C;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    span{
-      text-align: center;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 25px;
-      letter-spacing: 0.32px;
-      color: #FFF;
+    @media(max-width:1200px){
+      @include btnMobile;
+      margin-top: 40px;
     }
   }
 }
