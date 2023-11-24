@@ -1,10 +1,14 @@
 import './index.html';
 import './index.scss';
-import {openSubmenu} from './js/openSubmenu.js';
-openSubmenu();
 import {openPortfolio} from './js/openPortfolio.js';
 openPortfolio();
 import $ from "jquery";
 window.jQuery = $;
 require("@fancyapps/fancybox");
 import './js/mask-number.js';
+import { openBurger } from './js/openBurger.js';
+openBurger();
+import { closeBurger } from './js/closeBurger.js';
+closeBurger();
+// import { openModal } from './js/openModal.js';
+// openModal();
