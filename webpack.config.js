@@ -16,7 +16,10 @@ module.exports = {
     open: true,
     hot: true,
   },
-  entry: path.resolve(__dirname, 'src', 'index.js'),
+  entry: {
+    index: path.resolve(__dirname, 'src', 'index.js'),
+    services: path.resolve(__dirname, 'src', 'services.js'),
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
@@ -26,6 +29,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
+      filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'services.html'),
+      filename: 'services.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
