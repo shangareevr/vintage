@@ -3,18 +3,35 @@
     max-width: 1456px;
     margin: 0 auto;
     margin-top: 59px;
+    &_mb100{
+      margin-bottom: 100px;
+      @media(max-width:1500px){
+        margin-bottom: 60px;
+      }
+    }
     @media(max-width:1450px){
       padding: 0 15px;
-      margin-top: 50px;
+      margin-top: 34px;
     }
   }
   &__title{
     @include title;
+    &_mt160{
+      margin-top: 160px;
+    }
+    br{
+      display: none;
+    }
     @media(max-width:1200px){
       @include titleMidle;
     }
     @media(max-width:700px){
+      margin-top: 80px;
       @include titleMob;
+      br{
+        display: block;
+      }
+      
     }
   }
   &__plan{
@@ -29,7 +46,7 @@
     }
     @media(max-width:700px){
       margin-top: 30px;
-      gap: 35px;
+      gap: 34px;
     }
   }
   &__item{
@@ -51,17 +68,28 @@
     font-style: italic;
     font-weight: 500;
     line-height: 50px;
+    @media(max-width:800px){
+      font-size: 32px;
+      line-height: 35px;
+    }
   }
   &__line{
     margin-top: 1px;
     display: flex;
     gap: 19px;
     align-items: center;
+    @media(max-width:800px){
+      gap: 9px;
+      align-items: center;
+    }
   }
   &__vertical{
     width: 2px;
     height: 30px;
-    background-color: #D8B27A;;
+    background-color: #D8B27A;
+    @media(max-width:800px){
+      height: 20px;
+    }
   }
   &__horizontal{
     width: 100%;
@@ -88,6 +116,7 @@
     line-height: 20px;
     @media(max-width:1200px){
       font-size: 14px;
+      margin-top: 5px;
     }
   }
 }

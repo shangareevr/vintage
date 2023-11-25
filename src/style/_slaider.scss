@@ -1,0 +1,36 @@
+.slider__section .slick{
+  &-list{
+    overflow: hidden;
+    @media(max-width:1700px){
+      width: calc(100vw - 200px);
+    }
+    @media(max-width:700px){
+      width: 100% !important;
+    }
+  }
+  // &-slider{
+  //   width: 1452px;
+  // }
+  &-track{
+    display: flex;
+    gap: 20px;
+    @media(max-width:1600px){
+      gap: 10px;
+    }
+    @media(max-width:1000px){
+      width: 310px;
+      height: 260px;
+    }
+    @media(max-width:500px){
+      width: 310px;
+      height: 230px;
+    }
+  }
+  &-slide{ // элемент слайдера
+    display: flex;
+    @media(max-width:500px){
+      width: 310px;
+      height: 230px;
+    }
+  }
+}
