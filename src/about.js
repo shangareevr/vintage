@@ -7,6 +7,9 @@ import { openBurger } from './js/openBurger.js';
 openBurger();
 import { closeBurger } from './js/closeBurger.js';
 closeBurger();
+import { selectOpen, selectClose } from './js/select.js';
+selectOpen();
+selectClose();
 import './js/slick.js';
 $('.partners__slider').slick({
   accessibility: true,

@@ -1,13 +1,16 @@
 import './pages.html';
 import './pages.scss';
-import $ from "jquery";
-window.jQuery = $;
+const $ = require('jquery')
 require("@fancyapps/fancybox");
 import './js/mask-number.js';
 import { openBurger } from './js/openBurger.js';
 openBurger();
 import { closeBurger } from './js/closeBurger.js';
 closeBurger();
+
+import { selectOpen, selectClose } from './js/select.js';
+selectOpen();
+selectClose();
 
 import './js/slick.js';
 $('.slider__section').slick({
