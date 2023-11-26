@@ -8,7 +8,8 @@
       padding: 15px;
     }
     @media(max-width:1200px){
-      margin-top: 95px;
+      margin-top: 50px;
+      margin-bottom: 35px;
     }
   }
   &__title{
@@ -30,6 +31,7 @@
     align-items: center;
     overflow: hidden;
     @media(max-width:500px){
+      margin-top: 25px;
       height: 160px;
     }
   }

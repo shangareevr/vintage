@@ -1,6 +1,5 @@
 import './portfolio.html';
-import './index.scss';
-// import './portfolio.scss';
+import './portfolio.scss';
 import {openPortfolio} from './js/openPortfolio.js';
 openPortfolio();
 const $ = require('jquery')

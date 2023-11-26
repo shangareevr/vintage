@@ -11,22 +11,22 @@
       <div class="header__wrapper">
         <nav class="header__nav">
           <img src="./img/logo.svg" alt="Логотип" class="header__logo header__logo_mobile">
-          <a class="burger__menu">
+          <div class="burger__menu">
             <span class="first__line"></span>
             <span class="second__line"></span>
-          </a>
-          <div class="nav__wrapper" id="menu">
+          </div>
+          <div class="nav__wrapper">
             <ul class="nav__list">
-              <li class="nav__items"><a href="./services.html" class="nav__link">Услуги <img src="./img/array.svg" alt="" class="nav__img"></a>
-              <ul class="nav__submenu">
+              <li class="nav__items"><a href="./services.html" class="nav__link"><span>Услуги</span><img src="./img/array.svg" alt="" class="nav__img"></a>
+                <ul class="nav__submenu">
                 <li class="submenu__items"><a href="./design.html" class="submenu__link">Дизайн интерьера</a></li>
                 <li class="submenu__items"><a href="./services.html" class="submenu__link">Отделочные работы</a></li>
                 <li class="submenu__items"><a href="./services.html" class="submenu__link">Авторский надзор</a></li>
               </ul>
               </li>
               <li class="nav__items"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-              <li class="nav__items"><a href="" class="nav__link">О компании</a></li>
-              <li class="nav__items"><a href="" class="nav__link">Контакты</a></li>
+              <li class="nav__items"><a href="./about.html" class="nav__link">О компании</a></li>
+              <li class="nav__items"><a href="./contacts.html" class="nav__link">Контакты</a></li>
             </ul>
             <img src="./img/logo.svg" alt="Логотип" class="header__logo">
             <div class="header__call">
@@ -142,15 +142,15 @@
             <div class="footer__sign">&#169; « Все права защищены «Vintage»</div>
           </div>
           <div class="footer__items">
-            <a href="" class="footer__item">Услуги</a>
+            <a href="./services.html" class="footer__item">Услуги</a>
             <div class="footer__item footer__items-services">
-              <a href="" class="footer__service">Дизайн интерьера</a>
-              <a href="" class="footer__service">Отделочные работы</a>
-              <a href="" class="footer__service">Авторский надзор</a>
+              <a href="./design.html" class="footer__service">Дизайн интерьера</a>
+              <a href="./services.html" class="footer__service">Отделочные работы</a>
+              <a href="./services.html" class="footer__service">Авторский надзор</a>
             </div>
-            <a href="" class="footer__item">О компании</a>
-            <a href="" class="footer__item">Портфолио</a>
-            <a href="" class="footer__item">Контакты</a>
+            <a href="./about.html" class="footer__item">О компании</a>
+            <a href="./portfolio.html" class="footer__item">Портфолио</a>
+            <a href="./contacts.html" class="footer__item">Контакты</a>
           </div>
           <div class="footer__social">
             <div class="social__title">Соцсети и мессенджеры:</div>
@@ -167,6 +167,95 @@
         </div>
       </div>
     </footer>
+    <div class="overlay" id="modal" >
+      <div class="modal">
+        <div class="modal__wrapper">
+          <div class="modal__close" title="close" data-fancybox-close>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="modal__title">заказать звонок</div>
+          <div class="modal__subtitle">Заполните форму и мы сможем проконсультировать вас более детально</div>
+          <form class="modal__form" action="#">
+            <div class="modal__contacts">
+              <div class="modal__items">
+                <p class="input__title">имя</p>
+                <input type="text" placeholder="как к вам обращаться">
+              </div>
+              <div class="modal__items">
+                <p class="input__title">телефон</p>
+                <input type="text" class="modal__number" placeholder="+7 (999)-999-99-99">
+              </div>
+            </div>
+            <div class="modal__submit">
+              <button class="modal__btn" type="submit"><span>отправить запрос</span> <img src="./img/arrayModal.svg" alt="Array"></button>
+              <p class="modal__agreement">Нажимая кноку «Отправить запрос», вы соглашаетесь с <a href="">политикой конфиденциальности</a></p>
+            </div>
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="request" id="request" >
+      <div class="request__modal">
+        <div class="request__wrapper">
+          <div class="request__close" title="close" data-fancybox-close>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="request__text">
+            <div class="request__title">рассчитаем <br>стоимость <br><span>{</span>дизайн-проекта<span>}</span></div>
+          <div class="request__subtitle">Заполните форму и мы подготовим для вас индвидуальное предложение</div>
+          </div>
+          <form class="request__form" action="#">
+            <div class="request__contacts">
+              <div class="request__items">
+                <p class="input__title">имя*</p>
+                <input type="text" placeholder="как к вам обращаться">
+              </div>
+              <div class="request__items">
+                <p class="input__title">телефон*</p>
+                <input type="text" class="request__number" placeholder="+7 (999) 999-99-99">
+              </div>
+            </div>
+            <div class="request__info">
+              <div class="request__items">
+                <p class="input__title">выберете объект</p>
+                <div class="request__select">
+                  <input type="hidden" name="subject" value="выберете объект">
+                  <span class="request__current">выберете объект</span>
+                  <ul class="request__options">
+                    <li class="request__option">выберете объект</li>
+                    <li class="request__option">дом</li>
+                    <li class="request__option">квартира</li>
+                    <li class="request__option">другое</li></ul>
+                </div>
+              </div>
+              <div class="request__items">
+                <p class="input__title">площадь, м<sup>2</sup></p>
+                <input type="number" placeholder="100">
+              </div>
+            </div>
+            <div class="request__location">
+              <p class="input__title">местонахождение</p>
+              <input type="text" placeholder="укажите ваш город">
+            </div>
+            <div class="request__submit">
+              <div class="request__btns">
+                <button class="request__btn" type="submit"><span>отправить запрос</span> <img src="./img/arrayModal.svg" alt="Array"></button>
+                <div class="request__file">
+                  <input type='file' name="file" id="input__file">
+                  <label for="input__file" class="request__label">
+                    <span class="input__file-icon-wrapper"><img class="input__file-icon" src="./img/addFile.svg" alt="Выбрать файл" width="25"></span>
+                    <span class="input__file-button-text">Прикрепить документ</span>
+                 </label>
+                </div>
+              </div>
+              <p class="request__agreement">Нажимая кнопку «Отправить запрос», вы соглашаетесь с <a href="">политикой конфиденциальности</a></p>
+            </div>
+            </form>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

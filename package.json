@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.5",
+    "jake": "^10.8.7",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
     "underscore": "^1.13.6",

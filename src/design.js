@@ -14,3 +14,9 @@ $('.slider__section').slick({
   useTransform:true,
 });
 require("@fancyapps/fancybox");
+
+import './js/mask-number.js';
+import { openBurger } from './js/openBurger.js';
+openBurger();
+import { closeBurger } from './js/closeBurger.js';
+closeBurger();

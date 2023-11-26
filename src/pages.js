@@ -1,23 +1,22 @@
-import './about.html';
-import './about.scss';
-const $ = require('jquery')
+import './pages.html';
+import './pages.scss';
+import $ from "jquery";
+window.jQuery = $;
 require("@fancyapps/fancybox");
 import './js/mask-number.js';
 import { openBurger } from './js/openBurger.js';
 openBurger();
 import { closeBurger } from './js/closeBurger.js';
 closeBurger();
+
 import './js/slick.js';
-$('.partners__slider').slick({
-  accessibility: true,
-  arrows:false,
+$('.slider__section').slick({
+  prevArrow: $('.slider__prev'),
+  nextArrow: $('.slider__next'),
   infinite: true,
+  respondTo: 'min',
+  variableWidth:true,
   speed: 500,
   sliderScroll:1,
   useTransform:true,
-  slidesToShow:6,
-  centerMode: true,
-  initialSlid:1,
-  centerPadding: '0px',
-  touchThreshold:10,
 });

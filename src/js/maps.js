@@ -7,8 +7,8 @@ let map = new maps.Map('map', {
   let placemark = new maps.Placemark([55.793880, 37.541018], {}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'assets/map.svg',
-		iconImageSize: [179, 55],
-		iconImageOffset: [-100, -60]
+		iconImageSize: [70, 78],
+		iconImageOffset: [0, -100]
 	});
 
   map.controls.remove('geolocationControl'); // удаляем геолокацию

@@ -22,8 +22,8 @@ module.exports = {
     services: './src/services.js',
     about: './src/about.js',
 		portfolio: './src/portfolio.js',
-		about: './src/zilart duplex.js',
-		portfolio: './src/contacts.js',
+		contacts: './src/contacts.js',
+		pages: './src/pages.js',
   },
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -59,9 +59,9 @@ new HtmlWebpackPlugin({
 	chunks: ['about'],
 }),
 new HtmlWebpackPlugin({
-	template: path.resolve(__dirname, 'src', 'zilart duplex.html'),
-	filename: 'zilart-duplex.html',
-	chunks: ['zilart duplex'],
+	template: path.resolve(__dirname, 'src', 'pages.html'),
+	filename: 'pages.html',
+	chunks: ['pages'],
 }),
 new HtmlWebpackPlugin({
 	template: path.resolve(__dirname, 'src', 'contacts.html'),
