@@ -1,0 +1,106 @@
+.abouts {
+  position: relative;
+  &__wrapper{
+    width: 100%;
+    background: url('../img/Rectangle\ 300.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+    overflow: hidden;
+    margin-top: -7px;
+    margin-bottom: 50px;
+    @media(max-width:1200px){
+      height: 435px;
+      margin-top: 0px;
+    }
+    .main__pointer{
+      margin-top: 7px;
+      gap: 8.5px;
+      @media(max-width:1200px){
+        margin-top: 0px;
+      }
+    }
+  }
+  &__content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 953px;
+    align-items: center;
+    gap: 30px;
+    margin-top: 115px;
+    @media(max-width:1200px){
+      margin-top:62px;
+      height: 100px;
+      gap: 15px;
+      padding: 0 15px;
+    }
+  }
+  &__title{
+    @include titleH1;
+    @media(max-width:1200px){
+      @include titleH1Midle;
+    }
+    @media(max-width:700px){
+      @include titleH1Mob;
+    }
+  }
+  &__subtitle{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 783px;
+    br{
+      display: none;
+    }
+    @media(max-width:1200px){
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 350px;
+      text-align: center;
+
+      br{
+        display: block;
+      }
+    }
+  }
+  &__icons{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    background-color: #1C1C1C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width:800px){
+      width: 60px;
+      height: 60px;
+    }
+  }
+  &__cercle{
+    width: 70px;
+    height: 70px;
+    background-color: #262626;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width:800px){
+      width: 42px;
+      height: 42px;
+      img{
+        width: 15.6px;
+        height: 18px;
+      }
+    }
+  }
+}

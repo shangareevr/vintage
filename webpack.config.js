@@ -19,24 +19,57 @@ module.exports = {
 	entry: {
     index: './src/index.js',
     design: './src/design.js',
+    services: './src/services.js',
+    about: './src/about.js',
+		portfolio: './src/portfolio.js',
+		about: './src/zilart duplex.js',
+		portfolio: './src/contacts.js',
   },
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		clean: true,
-		filename: '[name].[contenthash].js',
+		filename: '[name].js',
 		assetModuleFilename: 'assets/[name][ext]',
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'src', 'index.html'),
       filename: 'index.html',
+			chunks: ['index'],
 		}),
-      new HtmlWebpackPlugin({
-    template: path.resolve(__dirname, 'src', 'design.html'),
-    filename: 'design.html',
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'design.html'),
+      filename: 'design.html',
+			chunks: ['design'],
   }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'services.html'),
+      filename: 'services.html',
+			chunks: ['services'],
+  }),
+	new HtmlWebpackPlugin({
+		template: path.resolve(__dirname, 'src', 'portfolio.html'),
+		filename: 'portfolio.html',
+		chunks: ['portfolio'],
+		
+}),
+new HtmlWebpackPlugin({
+	template: path.resolve(__dirname, 'src', 'about.html'),
+	filename: 'about.html',
+	chunks: ['about'],
+}),
+new HtmlWebpackPlugin({
+	template: path.resolve(__dirname, 'src', 'zilart duplex.html'),
+	filename: 'zilart-duplex.html',
+	chunks: ['zilart duplex'],
+}),
+new HtmlWebpackPlugin({
+	template: path.resolve(__dirname, 'src', 'contacts.html'),
+	filename: 'contacts.html',
+	chunks: ['contacts'],
+}),
 		new MiniCssExtractPlugin({
-			filename: '[name].[contenthash].css',
+			filename: '[name].css',
 		}),
 		new webpack.ProvidePlugin({
 			identifier: path.resolve(path.join(__dirname, 'src/module1')),

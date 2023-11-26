@@ -1,0 +1,30 @@
+.contact{
+  &__wrapper{
+    margin: 0 auto;
+  }
+
+  &__map{
+    margin-top: 80px;
+    width: 100%;
+    height: 720px;
+  }
+}
+
+
+.ymaps-2-1-79-map{
+  height: 100% !important;
+  width: 100% !important;
+  filter: grayscale(1) !important;
+}
+.ymaps-2-1-79-gotoymaps__text,
+.ymaps-2-1-79-gototech,
+.ymaps-2-1-79-gotoymaps__container,
+.ymaps-2-1-79-copyright__content,
+.ymaps-2-1-79-gototaxi{
+  display: none !important;
+}
+canvas {width: auto !important;}
+
+.ymaps-layers-pane {
+	filter: grayscale(1) !important;
+}

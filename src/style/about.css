@@ -1,0 +1,10 @@
+.abouts__wrapper{
+  width: 100%;
+  background: url('../img/Rectangle\ 300.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 580px;
+  overflow: hidden;
+  margin-top: -7px;
+  margin-bottom: 50px;
+}

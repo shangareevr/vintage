@@ -8,9 +8,6 @@
       width: 100% !important;
     }
   }
-  // &-slider{
-  //   width: 1452px;
-  // }
   &-track{
     display: flex;
     gap: 20px;
@@ -31,6 +28,36 @@
     @media(max-width:500px){
       width: 310px;
       height: 230px;
+    }
+  }
+}
+.partners__slider .slick{
+  &-list{
+    overflow: hidden;
+    @media(max-width:1700px){
+      width: calc(100vw - 30px);
+    }
+    @media(max-width:700px){
+      width: 100% !important;
+    }
+  }
+  &-track{
+    display: flex;
+    gap: 40px;
+    @media(max-width:1600px){
+      gap: 15px;
+    }
+    // @media(max-width:500px){
+    //   width: 192px !important;
+    //   height: 100px !important;
+    // }
+  }
+  &-slide{ // элемент слайдера
+    width: 250px !important;
+    height: 130px !important;
+    @media(max-width:500px){
+      width: 192px !important;
+      height: 100px !important;
     }
   }
 }

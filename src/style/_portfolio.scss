@@ -22,11 +22,21 @@
     max-height:2470px;
     overflow: hidden;
     @media(max-width:1500px){
-      max-height: 2370px;
+      max-height: 2490px;
     }
     @media(max-width:800px){
       max-height: 1665px;
     }
+    &_page{
+      max-height: 4910px;
+      @media(max-width:1500px){
+        max-height: 5955px;
+      }
+      @media(max-width:800px){
+        max-height: 3315px;
+      }
+    }
+
     &.hide{
       max-height:max-content !important;
     }
@@ -51,7 +61,7 @@
     height: 100%;
     @media(max-width:1500px){
       max-width: 720px;
-      height: auto;
+      height: 480px;
     }
     @media(max-width:800px){
       width: 350px;

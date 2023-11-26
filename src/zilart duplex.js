@@ -1,7 +1,7 @@
-import './index.html';
-import './index.scss';
-import {openPortfolio} from './js/openPortfolio.js';
-openPortfolio();
+import './zilart duplex.html';
+import './zilart duplex.scss';
+// import {openPortfolio} from './js/openPortfolio.js';
+// openPortfolio();
 const $ = require('jquery')
 require("@fancyapps/fancybox");
 import './js/mask-number.js';
