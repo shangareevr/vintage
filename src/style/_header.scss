@@ -179,8 +179,21 @@
     justify-content: center;
     gap: 8px;
     position: relative;
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1.5px;
+      bottom: 5px;
+      width: 0;
+      background-color: #FFF;
+      transition: all .3s ease;
+    }
     &:hover{
       cursor: pointer;
+      &::before{
+        width: 100%;
+      }
       &>.nav__submenu{
         visibility: visible;
         opacity: 1;
@@ -235,10 +248,18 @@
   &__text{
     color: rgba(255, 255, 255, 0.50);
     line-height: 25px;
+    transition: all 0.3s ease;
+    &:hover{
+      color: #FFF;
+    }
   }
 }
 .request{
   &__text{
+    transition: all 0.3s ease;
+      &:hover{
+        color: #D8B27A;
+      }
     @media(max-width:1050px){
       color: #FFF;
       text-align: center;
@@ -248,6 +269,7 @@
       font-weight: 600;
       line-height: 25px;
       letter-spacing: 0.28px;
+      
     }
   }
 }

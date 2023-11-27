@@ -7,7 +7,7 @@
     @media(max-width:1500px){
       padding: 0 15px;
       margin-top: 30px;
-      margin-bottom: 60px;
+      padding-bottom: 60px;
     }
   }
   &__title{
@@ -52,15 +52,28 @@
       flex-direction: column;
       align-items: center;
       margin-top: 30px;
-
     }
   }
   &__items{
     position: relative;
+    width:min-content;
+    height: fit-content;
+    overflow: hidden;
+    &:hover{
+      .portfolio__img{
+        transform: scale(1.1);
+      }
+      .portfolio__icon{
+        background-color: #D8B27A;
+      }
+      
+    }
   }
   &__img{
     width: auto;
     height: 100%;
+    transition: all 0.3s ease;
+    
     @media(max-width:1500px){
       max-width: 720px;
       height: 480px;
@@ -70,13 +83,25 @@
       height: 260px !important;
     }
   }
-  &__array{
+  &__icon{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
     @media(max-width:800px){
-      top: 15px;
-      right: 15px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__array{
+    width: 15px;
+    height: 15px;
+    @media(max-width:800px){
       width: 10px;
       height: 10px;
     }
